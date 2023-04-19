@@ -1,0 +1,255 @@
+\hypertarget{classDriverModel}{}\doxysection{Driver\+Model Class Reference}
+\label{classDriverModel}\index{DriverModel@{DriverModel}}
+
+
+Класс модели данных для отображения элементов списка водителей.  
+
+
+
+
+{\ttfamily \#include $<$drivermodel.\+h$>$}
+
+
+
+Inheritance diagram for Driver\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classDriverModel__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Driver\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classDriverModel__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDriverModel_a9143b6c5d77e4143f8bb08942a3e03fb}{Driver\+Model}} (QObject $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Конструктор класса. \end{DoxyCompactList}\item 
+QVariant \mbox{\hyperlink{classDriverModel_aa8dd5d13fc94610175989aa0203c64b6}{header\+Data}} (int section, Qt\+::\+Orientation orientation, int role) const override
+\begin{DoxyCompactList}\small\item\em получить данные заголовка модели данных \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classDriverModel_a579ce6b5647c1cb6b399820ec663dd6f}{row\+Count}} (const QModel\+Index \&parent=QModel\+Index()) const override
+\begin{DoxyCompactList}\small\item\em Получить количество строк данных. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classDriverModel_af6ea44f2f148c710f06570fb179736b6}{column\+Count}} (const QModel\+Index \&parent) const override
+\begin{DoxyCompactList}\small\item\em Получить количество столбцов данных. \end{DoxyCompactList}\item 
+QVariant \mbox{\hyperlink{classDriverModel_a52e4f0efd651e36053b3b681b7fb3e3b}{data}} (const QModel\+Index \&index, int role) const override
+\begin{DoxyCompactList}\small\item\em Получить данные элемента в модели данных. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDriverModel_a484263ab88b1171b536818214be75258}{set\+Data}} (const QModel\+Index \&index, const QVariant \&value, int role=Qt\+::\+Edit\+Role)
+\begin{DoxyCompactList}\small\item\em Установить данные для указанного индекса в модели данных. \end{DoxyCompactList}\item 
+Qt\+::\+Item\+Flags \mbox{\hyperlink{classDriverModel_aa4784b50ef2f415ee0f58d7b8f3b04da}{flags}} (const QModel\+Index \&index) const
+\begin{DoxyCompactList}\small\item\em Получить флаги элемента данных для указанного индекса. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDriverModel_a8cd686ad7a8ebdf8e0a269c0528dfe2e}{add}} (string, string, string, string, string, string)
+\begin{DoxyCompactList}\small\item\em Метод добавления данных о водителе в модель данных. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDriverModel_aa0ef3cfc36efa7ee700942dc8744ce96}\label{classDriverModel_aa0ef3cfc36efa7ee700942dc8744ce96}} 
+void {\bfseries del} ()
+\begin{DoxyCompactList}\small\item\em Метод удаления данных о водетеле из модели данных. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDriverModel_a564b0efc046010461959ea5186b79a2f}\label{classDriverModel_a564b0efc046010461959ea5186b79a2f}} 
+void {\bfseries addfromfile} ()
+\begin{DoxyCompactList}\small\item\em Метод добавления данных о водетеле из файла в модели данных. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDriverModel_a28dc46a08fb81d84886ca0650ccd84bc}\label{classDriverModel_a28dc46a08fb81d84886ca0650ccd84bc}} 
+class {\bfseries Drivers\+List}
+\item 
+\mbox{\Hypertarget{classDriverModel_af9db4b672c4d3104f5541893e08e1809}\label{classDriverModel_af9db4b672c4d3104f5541893e08e1809}} 
+class {\bfseries Main\+Window}
+\item 
+\mbox{\Hypertarget{classDriverModel_a4e497fc17706b35b442abae30721dfc7}\label{classDriverModel_a4e497fc17706b35b442abae30721dfc7}} 
+class {\bfseries editdriver}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс модели данных для отображения элементов списка водителей. 
+
+Этот класс определяет модель данных для отображения элементов списка водителей, которая наследуется от QAbstract\+List\+Model. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDriverModel_a9143b6c5d77e4143f8bb08942a3e03fb}\label{classDriverModel_a9143b6c5d77e4143f8bb08942a3e03fb}} 
+\index{DriverModel@{DriverModel}!DriverModel@{DriverModel}}
+\index{DriverModel@{DriverModel}!DriverModel@{DriverModel}}
+\doxysubsubsection{\texorpdfstring{DriverModel()}{DriverModel()}}
+{\footnotesize\ttfamily Driver\+Model\+::\+Driver\+Model (\begin{DoxyParamCaption}\item[{QObject $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Конструктор класса. 
+
+Создает новый объект \mbox{\hyperlink{classDriverModel}{Driver\+Model}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Родительский объект. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDriverModel_a8cd686ad7a8ebdf8e0a269c0528dfe2e}\label{classDriverModel_a8cd686ad7a8ebdf8e0a269c0528dfe2e}} 
+\index{DriverModel@{DriverModel}!add@{add}}
+\index{add@{add}!DriverModel@{DriverModel}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void Driver\+Model\+::add (\begin{DoxyParamCaption}\item[{string}]{m\+\_\+fam,  }\item[{string}]{m\+\_\+name,  }\item[{string}]{m\+\_\+och,  }\item[{string}]{m\+\_\+numph,  }\item[{string}]{m\+\_\+car,  }\item[{string}]{m\+\_\+regnum }\end{DoxyParamCaption})}
+
+
+
+Метод добавления данных о водителе в модель данных. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m\+\_\+fam} & Фамилия водителя. \\
+\hline
+{\em m\+\_\+name} & Имя водителя. \\
+\hline
+{\em m\+\_\+och} & Отчество водителя. \\
+\hline
+{\em m\+\_\+numph} & Номер телефона водителя. \\
+\hline
+{\em m\+\_\+car} & Название автомобилия водителя. \\
+\hline
+{\em m\+\_\+regnum} & Номер автомобилия водителя. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDriverModel_af6ea44f2f148c710f06570fb179736b6}\label{classDriverModel_af6ea44f2f148c710f06570fb179736b6}} 
+\index{DriverModel@{DriverModel}!columnCount@{columnCount}}
+\index{columnCount@{columnCount}!DriverModel@{DriverModel}}
+\doxysubsubsection{\texorpdfstring{columnCount()}{columnCount()}}
+{\footnotesize\ttfamily int Driver\+Model\+::column\+Count (\begin{DoxyParamCaption}\item[{const QModel\+Index \&}]{parent }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Получить количество столбцов данных. 
+
+Возвращает количество столбцов данных.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Родительский элемент. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Количество столбцов данных. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDriverModel_a52e4f0efd651e36053b3b681b7fb3e3b}\label{classDriverModel_a52e4f0efd651e36053b3b681b7fb3e3b}} 
+\index{DriverModel@{DriverModel}!data@{data}}
+\index{data@{data}!DriverModel@{DriverModel}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily QVariant Driver\+Model\+::data (\begin{DoxyParamCaption}\item[{const QModel\+Index \&}]{index,  }\item[{int}]{role }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Получить данные элемента в модели данных. 
+
+Возвращает данные элемента в модели данных для заданного индекса и роли.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Индекс элемента в модели данных. \\
+\hline
+{\em role} & Роль элемента в модели данных. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Данные элемента в модели данных. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDriverModel_aa4784b50ef2f415ee0f58d7b8f3b04da}\label{classDriverModel_aa4784b50ef2f415ee0f58d7b8f3b04da}} 
+\index{DriverModel@{DriverModel}!flags@{flags}}
+\index{flags@{flags}!DriverModel@{DriverModel}}
+\doxysubsubsection{\texorpdfstring{flags()}{flags()}}
+{\footnotesize\ttfamily Qt\+::\+Item\+Flags Driver\+Model\+::flags (\begin{DoxyParamCaption}\item[{const QModel\+Index \&}]{index }\end{DoxyParamCaption}) const}
+
+
+
+Получить флаги элемента данных для указанного индекса. 
+
+Эта функция возвращает флаги элемента данных для указанного индекса.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Индекс элемента данных. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Флаги элемента данных для указанного индекса. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDriverModel_aa8dd5d13fc94610175989aa0203c64b6}\label{classDriverModel_aa8dd5d13fc94610175989aa0203c64b6}} 
+\index{DriverModel@{DriverModel}!headerData@{headerData}}
+\index{headerData@{headerData}!DriverModel@{DriverModel}}
+\doxysubsubsection{\texorpdfstring{headerData()}{headerData()}}
+{\footnotesize\ttfamily QVariant Driver\+Model\+::header\+Data (\begin{DoxyParamCaption}\item[{int}]{section,  }\item[{Qt\+::\+Orientation}]{orientation,  }\item[{int}]{role }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+получить данные заголовка модели данных 
+
+
+\begin{DoxyParams}{Parameters}
+{\em section} & Индекс раздела модели данных \\
+\hline
+{\em orientation} & Ориентация заголовка \\
+\hline
+{\em role} & Роль заголовка \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Данные заголовка для указанной роли, или QVariant(), если данные не найдены 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDriverModel_a579ce6b5647c1cb6b399820ec663dd6f}\label{classDriverModel_a579ce6b5647c1cb6b399820ec663dd6f}} 
+\index{DriverModel@{DriverModel}!rowCount@{rowCount}}
+\index{rowCount@{rowCount}!DriverModel@{DriverModel}}
+\doxysubsubsection{\texorpdfstring{rowCount()}{rowCount()}}
+{\footnotesize\ttfamily int Driver\+Model\+::row\+Count (\begin{DoxyParamCaption}\item[{const QModel\+Index \&}]{parent = {\ttfamily QModelIndex()} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Получить количество строк данных. 
+
+Возвращает количество строк данных.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Родительский элемент. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Количество строк данных. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDriverModel_a484263ab88b1171b536818214be75258}\label{classDriverModel_a484263ab88b1171b536818214be75258}} 
+\index{DriverModel@{DriverModel}!setData@{setData}}
+\index{setData@{setData}!DriverModel@{DriverModel}}
+\doxysubsubsection{\texorpdfstring{setData()}{setData()}}
+{\footnotesize\ttfamily bool Driver\+Model\+::set\+Data (\begin{DoxyParamCaption}\item[{const QModel\+Index \&}]{index,  }\item[{const QVariant \&}]{value,  }\item[{int}]{role = {\ttfamily Qt\+:\+:EditRole} }\end{DoxyParamCaption})}
+
+
+
+Установить данные для указанного индекса в модели данных. 
+
+Эта функция устанавливает данные для указанного индекса в модели данных.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Индекс элемента данных. \\
+\hline
+{\em value} & Новое значение для элемента данных. \\
+\hline
+{\em role} & Роль элемента данных. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, если данные успешно установлены, иначе false. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+drivermodel.\+h\item 
+drivermodel.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,200 @@
+\hypertarget{classstorage}{}\doxysection{storage Class Reference}
+\label{classstorage}\index{storage@{storage}}
+
+
+Класс, представляющий товар.  
+
+
+
+
+{\ttfamily \#include $<$storage.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classstorage_a55f5297949ab4ab66c09563e1d3875ec}\label{classstorage_a55f5297949ab4ab66c09563e1d3875ec}} 
+{\bfseries storage} ()
+\begin{DoxyCompactList}\small\item\em Конструктор класса по умолчанию. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstorage_ab7f590e216691f4fcdc1963b5469994e}{storage}} (string m\+\_\+name, string m\+\_\+type, int m\+\_\+kol, bool m\+\_\+status, QDate m\+\_\+in, \mbox{\hyperlink{classdriver}{driver}} m\+\_\+whoin, \mbox{\hyperlink{classtenant}{tenant}} m\+\_\+whois, string m\+\_\+extrainfo)
+\begin{DoxyCompactList}\small\item\em Конструктор класса. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classstorage_ac7d5664e97625603e30f649d45231b06}\label{classstorage_ac7d5664e97625603e30f649d45231b06}} 
+{\bfseries $\sim$storage} ()
+\begin{DoxyCompactList}\small\item\em Деструктор класса. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classstorage_a1771198737d08729b9b5b2db8f2e800e}{get\+\_\+s\+\_\+name}} ()
+\begin{DoxyCompactList}\small\item\em Метод получения названия товара. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classstorage_a59e0165cef457f9852eb47305553d52a}{get\+\_\+s\+\_\+type}} ()
+\begin{DoxyCompactList}\small\item\em Метод получения типа товара. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classstorage_ad399ca29af6e4cbb43fc790cb9a31003}{get\+\_\+s\+\_\+kol}} ()
+\begin{DoxyCompactList}\small\item\em Метод получения количества товара. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classstorage_a2f1091cff2c6e17b878f142a41ec66da}{get\+\_\+s\+\_\+id}} ()
+\begin{DoxyCompactList}\small\item\em Метод получения идентификатора товара. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classstorage_af4dda96459de61577bb9c333263b4d6d}{get\+\_\+flagdel}} ()
+\begin{DoxyCompactList}\small\item\em Метод получения флага удаления товара. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classstorage_a3a75b74f71093ca771f86dfbe94411d5}\label{classstorage_a3a75b74f71093ca771f86dfbe94411d5}} 
+void {\bfseries set\+\_\+flagdel} (bool setfl)
+\begin{DoxyCompactList}\small\item\em Метод присвоения флага удаления товару. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classstorage_abebf787373be8c33ddf1367ed5b517f9}\label{classstorage_abebf787373be8c33ddf1367ed5b517f9}} 
+void {\bfseries set\+\_\+idgen} (int nid)
+\begin{DoxyCompactList}\small\item\em Метод присвоения идентификатора товара. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classstorage_aba39baccdc7733202c8fd4d41c4a8325}\label{classstorage_aba39baccdc7733202c8fd4d41c4a8325}} 
+class {\bfseries Storage\+Model}
+\item 
+\mbox{\Hypertarget{classstorage_a5a955aea8d30f6c2c27f76240b6c0007}\label{classstorage_a5a955aea8d30f6c2c27f76240b6c0007}} 
+class {\bfseries editelem}
+\item 
+fstream \& \mbox{\hyperlink{classstorage_a365d64328d72e1c8221a115e40378e10}{operator$>$$>$}} (fstream \&f, \mbox{\hyperlink{classstorage}{storage}} \&elem)
+\begin{DoxyCompactList}\small\item\em Чтение из файла \end{DoxyCompactList}\item 
+fstream \& \mbox{\hyperlink{classstorage_abb046e58b2d86aa2856c70bed458c96d}{operator$<$$<$}} (fstream \&f, \mbox{\hyperlink{classstorage}{storage}} elem)
+\begin{DoxyCompactList}\small\item\em Запись в файл \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс, представляющий товар. 
+
+Этот класс хранит информацию о товаре. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classstorage_ab7f590e216691f4fcdc1963b5469994e}\label{classstorage_ab7f590e216691f4fcdc1963b5469994e}} 
+\index{storage@{storage}!storage@{storage}}
+\index{storage@{storage}!storage@{storage}}
+\doxysubsubsection{\texorpdfstring{storage()}{storage()}}
+{\footnotesize\ttfamily storage\+::storage (\begin{DoxyParamCaption}\item[{string}]{m\+\_\+name,  }\item[{string}]{m\+\_\+type,  }\item[{int}]{m\+\_\+kol,  }\item[{bool}]{m\+\_\+status,  }\item[{QDate}]{m\+\_\+in,  }\item[{\mbox{\hyperlink{classdriver}{driver}}}]{m\+\_\+whoin,  }\item[{\mbox{\hyperlink{classtenant}{tenant}}}]{m\+\_\+whois,  }\item[{string}]{m\+\_\+extrainfo }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m\+\_\+name} & Название товара. \\
+\hline
+{\em m\+\_\+type} & Тип товара. \\
+\hline
+{\em m\+\_\+kol} & Количество товара. \\
+\hline
+{\em m\+\_\+status} & Статус товара(на складе/не на складе). \\
+\hline
+{\em m\+\_\+in} & Дата завоза на склад. \\
+\hline
+{\em m\+\_\+whoin} & Водитель ввозивший товар. \\
+\hline
+{\em m\+\_\+whois} & Собственник товара. \\
+\hline
+{\em m\+\_\+extrainfo} & Дополнительная информация о товаре. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classstorage_af4dda96459de61577bb9c333263b4d6d}\label{classstorage_af4dda96459de61577bb9c333263b4d6d}} 
+\index{storage@{storage}!get\_flagdel@{get\_flagdel}}
+\index{get\_flagdel@{get\_flagdel}!storage@{storage}}
+\doxysubsubsection{\texorpdfstring{get\_flagdel()}{get\_flagdel()}}
+{\footnotesize\ttfamily bool storage\+::get\+\_\+flagdel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Метод получения флага удаления товара. 
+
+\begin{DoxyReturn}{Returns}
+Флаг удаления товара. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classstorage_a2f1091cff2c6e17b878f142a41ec66da}\label{classstorage_a2f1091cff2c6e17b878f142a41ec66da}} 
+\index{storage@{storage}!get\_s\_id@{get\_s\_id}}
+\index{get\_s\_id@{get\_s\_id}!storage@{storage}}
+\doxysubsubsection{\texorpdfstring{get\_s\_id()}{get\_s\_id()}}
+{\footnotesize\ttfamily int storage\+::get\+\_\+s\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Метод получения идентификатора товара. 
+
+\begin{DoxyReturn}{Returns}
+Идентификатор товара. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classstorage_ad399ca29af6e4cbb43fc790cb9a31003}\label{classstorage_ad399ca29af6e4cbb43fc790cb9a31003}} 
+\index{storage@{storage}!get\_s\_kol@{get\_s\_kol}}
+\index{get\_s\_kol@{get\_s\_kol}!storage@{storage}}
+\doxysubsubsection{\texorpdfstring{get\_s\_kol()}{get\_s\_kol()}}
+{\footnotesize\ttfamily int storage\+::get\+\_\+s\+\_\+kol (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Метод получения количества товара. 
+
+\begin{DoxyReturn}{Returns}
+Количество товара. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classstorage_a1771198737d08729b9b5b2db8f2e800e}\label{classstorage_a1771198737d08729b9b5b2db8f2e800e}} 
+\index{storage@{storage}!get\_s\_name@{get\_s\_name}}
+\index{get\_s\_name@{get\_s\_name}!storage@{storage}}
+\doxysubsubsection{\texorpdfstring{get\_s\_name()}{get\_s\_name()}}
+{\footnotesize\ttfamily string storage\+::get\+\_\+s\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Метод получения названия товара. 
+
+\begin{DoxyReturn}{Returns}
+Название товара. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classstorage_a59e0165cef457f9852eb47305553d52a}\label{classstorage_a59e0165cef457f9852eb47305553d52a}} 
+\index{storage@{storage}!get\_s\_type@{get\_s\_type}}
+\index{get\_s\_type@{get\_s\_type}!storage@{storage}}
+\doxysubsubsection{\texorpdfstring{get\_s\_type()}{get\_s\_type()}}
+{\footnotesize\ttfamily string storage\+::get\+\_\+s\+\_\+type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Метод получения типа товара. 
+
+\begin{DoxyReturn}{Returns}
+Тип товара. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classstorage_abb046e58b2d86aa2856c70bed458c96d}\label{classstorage_abb046e58b2d86aa2856c70bed458c96d}} 
+\index{storage@{storage}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!storage@{storage}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily fstream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{fstream \&}]{f,  }\item[{\mbox{\hyperlink{classstorage}{storage}}}]{elem }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Запись в файл 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & файл \\
+\hline
+{\em elem} & записываемый элемент склада \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classstorage_a365d64328d72e1c8221a115e40378e10}\label{classstorage_a365d64328d72e1c8221a115e40378e10}} 
+\index{storage@{storage}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!storage@{storage}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily fstream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{fstream \&}]{f,  }\item[{\mbox{\hyperlink{classstorage}{storage}} \&}]{elem }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Чтение из файла 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & файл \\
+\hline
+{\em elem} & элемент склада куда запишется информация \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+storage.\+h\item 
+main.\+cpp\item 
+storage.\+cpp\end{DoxyCompactItemize}

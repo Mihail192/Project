@@ -1,0 +1,44 @@
+\hypertarget{savefile_8h_source}{}\doxysection{savefile.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef SAVEFILE\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define SAVEFILE\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QDialog>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <QFile>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <QFileInfo>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <QMessageBox>}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{namespace }Ui \{}
+\DoxyCodeLine{13 \textcolor{keyword}{class }\mbox{\hyperlink{classsavefile}{savefile}};}
+\DoxyCodeLine{14 \}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{21 \textcolor{keyword}{class }\mbox{\hyperlink{classsavefile}{savefile}} : \textcolor{keyword}{public} QDialog}
+\DoxyCodeLine{22 \{}
+\DoxyCodeLine{23     Q\_OBJECT}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{keyword}{public}:}
+\DoxyCodeLine{33     \textcolor{keyword}{explicit} \mbox{\hyperlink{classsavefile_a2271d7fdfec78ac649acd0cd49713335}{savefile}}(QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{38     \mbox{\hyperlink{classsavefile_aa9c49f637a1cd4446c694ffff952effc}{\string~savefile}}();}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40 signals:}
+\DoxyCodeLine{46     \textcolor{keywordtype}{void} \mbox{\hyperlink{classsavefile_a332d337d01a83efa6da4832263762d03}{sendnamefile}}(\textcolor{keywordtype}{string});}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{52     \textcolor{keywordtype}{void} on\_pushButton\_clicked();}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{57     \textcolor{keywordtype}{void} on\_pushButton\_2\_clicked();}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{62     \textcolor{keywordtype}{void} reject();}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64 \textcolor{keyword}{private}:}
+\DoxyCodeLine{65     Ui::savefile *ui; }
+\DoxyCodeLine{66 \};}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// SAVEFILE\_H}}
+
+\end{DoxyCode}

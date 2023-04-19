@@ -1,0 +1,60 @@
+\hypertarget{editelem_8h_source}{}\doxysection{editelem.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef EDITELEM\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define EDITELEM\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QDialog>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QModelIndex>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}Users.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}driverinfo.h"{}}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{namespace }Ui \{}
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{classeditelem}{editelem}};}
+\DoxyCodeLine{11 \}}
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{classStorageModel}{StorageModel}};}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{19 \textcolor{keyword}{class }\mbox{\hyperlink{classeditelem}{editelem}} : \textcolor{keyword}{public} QDialog}
+\DoxyCodeLine{20 \{}
+\DoxyCodeLine{21     Q\_OBJECT}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 \textcolor{keyword}{public}:}
+\DoxyCodeLine{31     \textcolor{keyword}{explicit} \mbox{\hyperlink{classeditelem_a730016eae5b9f3396f6bd6487cd7e0ff}{editelem}}(QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{36     \mbox{\hyperlink{classeditelem_afa3f29a2bfd38f2f417e9a81cb750356}{\string~editelem}}();}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{44     \textcolor{keywordtype}{void} \mbox{\hyperlink{classeditelem_aef4fa8b9986502d9a4a73d544b79d981}{setdatainline}}(\mbox{\hyperlink{classStorageModel}{StorageModel}} *,vector<driver> );}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 signals:}
+\DoxyCodeLine{50     \textcolor{keywordtype}{void} \mbox{\hyperlink{classeditelem_a86d8b23f9b92120d759a352fb24a1c33}{signaledit}}();}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{56     \textcolor{keywordtype}{void} on\_pushButton\_2\_clicked();}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{65     \textcolor{keywordtype}{void} setedit(\textcolor{keyword}{const} QModelIndex \&);}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{70     \textcolor{keywordtype}{void} on\_pushButton\_clicked();}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{79     \textcolor{keywordtype}{void} editdata(\mbox{\hyperlink{classStorageModel}{StorageModel}} *);}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{86     \textcolor{keywordtype}{void} on\_checkBox\_stateChanged(\textcolor{keywordtype}{int} arg1);}
+\DoxyCodeLine{87 }
+\DoxyCodeLine{91     \textcolor{keywordtype}{void} reject();}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{98     \textcolor{keywordtype}{void} on\_comboBox\_currentIndexChanged(\textcolor{keywordtype}{int} index);}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{103     \textcolor{keywordtype}{void} on\_driverinfoButton\_clicked();}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{111     \textcolor{keywordtype}{void} setCursor(\textcolor{keywordtype}{int}, \textcolor{keywordtype}{int});}
+\DoxyCodeLine{112 }
+\DoxyCodeLine{113 \textcolor{keyword}{private}:}
+\DoxyCodeLine{114     Ui::editelem *ui; }
+\DoxyCodeLine{115     QModelIndex foredit; }
+\DoxyCodeLine{116     vector<driver> extradrivers; }
+\DoxyCodeLine{117     \mbox{\hyperlink{classdriver}{driver}} current\_driver; }
+\DoxyCodeLine{118     \mbox{\hyperlink{classDriverInfo}{DriverInfo}} *wininfo; }
+\DoxyCodeLine{119 \};}
+\DoxyCodeLine{120 }
+\DoxyCodeLine{121 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// EDITELEM\_H}}
+
+\end{DoxyCode}

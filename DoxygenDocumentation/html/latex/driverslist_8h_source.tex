@@ -1,0 +1,53 @@
+\hypertarget{driverslist_8h_source}{}\doxysection{driverslist.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef DRIVERSLIST\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define DRIVERSLIST\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QDialog>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}drivermodel.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}adddriver.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}editdriver.h"{}}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{namespace }Ui \{}
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{classDriversList}{DriversList}};}
+\DoxyCodeLine{11 \}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{18 \textcolor{keyword}{class }\mbox{\hyperlink{classDriversList}{DriversList}} : \textcolor{keyword}{public} QDialog}
+\DoxyCodeLine{19 \{}
+\DoxyCodeLine{20     Q\_OBJECT}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{keyword}{public}:}
+\DoxyCodeLine{23     \textcolor{keyword}{friend} \textcolor{keyword}{class }\mbox{\hyperlink{classMainWindow}{MainWindow}};}
+\DoxyCodeLine{31     \textcolor{keyword}{explicit} \mbox{\hyperlink{classDriversList_aec15e22d402240cdbf25f7d31c8dd228}{DriversList}}(QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{35     \mbox{\hyperlink{classDriversList_ac7b0e75e89eaad7098f40859ef7dc22c}{\string~DriversList}}();}
+\DoxyCodeLine{36 signals:}
+\DoxyCodeLine{42     \textcolor{keywordtype}{void} \mbox{\hyperlink{classDriversList_af8e819378dc26b40139f1c5a8c51c5aa}{sendDrivers}}(\mbox{\hyperlink{classDriverModel}{DriverModel}} *);}
+\DoxyCodeLine{48     \textcolor{keywordtype}{void} \mbox{\hyperlink{classDriversList_a5ed518116e1da2b1f7a5551b99747252}{sendDriversE}}(\mbox{\hyperlink{classDriverModel}{DriverModel}}*);}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{54     \textcolor{keywordtype}{void} on\_closeButton\_clicked();}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{61     \textcolor{keywordtype}{void} onButtonAdd();}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{68     \textcolor{keywordtype}{void} onButtonEdit();}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{73     \textcolor{keywordtype}{void} on\_addButton\_clicked();}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{80     \textcolor{keywordtype}{void} emptydrivers();}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{87     \textcolor{keywordtype}{void} openeditdriver();}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{92     \textcolor{keywordtype}{void} on\_delButton\_clicked();}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94 \textcolor{keyword}{private}:}
+\DoxyCodeLine{95     Ui::DriversList *ui; }
+\DoxyCodeLine{96     \mbox{\hyperlink{classDriverModel}{DriverModel}} *modeldriver; }
+\DoxyCodeLine{97     \mbox{\hyperlink{classAdddriver}{Adddriver}} *adddriverwin; }
+\DoxyCodeLine{98     \mbox{\hyperlink{classeditdriver}{editdriver}} *editdriverwin; }
+\DoxyCodeLine{99     \textcolor{keywordtype}{bool} buttondel; }
+\DoxyCodeLine{100 \};}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// DRIVERSLIST\_H}}
+
+\end{DoxyCode}
