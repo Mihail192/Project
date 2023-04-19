@@ -1,0 +1,4 @@
+<map id="driver" name="driver">
+<area shape="rect" id="node1" title="Класс, представляющий водителя." alt="" coords="15,80,75,107"/>
+<area shape="rect" id="node2" href="$classdatauser.html" title="Класс, представляющий информацию о человеке." alt="" coords="5,5,84,32"/>
+</map>
