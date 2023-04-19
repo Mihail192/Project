@@ -1,0 +1,116 @@
+\hypertarget{classDriversList}{}\doxysection{Drivers\+List Class Reference}
+\label{classDriversList}\index{DriversList@{DriversList}}
+
+
+Класс, представляющий окно вывода информации о водителях  
+
+
+
+
+{\ttfamily \#include $<$driverslist.\+h$>$}
+
+
+
+Inheritance diagram for Drivers\+List\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=149pt]{classDriversList__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Drivers\+List\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=149pt]{classDriversList__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classDriversList_af8e819378dc26b40139f1c5a8c51c5aa}{send\+Drivers}} (\mbox{\hyperlink{classDriverModel}{Driver\+Model}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Сигнал, который будет отправлен при нажатии кнопки \char`\"{}Добавить\char`\"{} в окне добавления водителя \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDriversList_a5ed518116e1da2b1f7a5551b99747252}{send\+DriversE}} (\mbox{\hyperlink{classDriverModel}{Driver\+Model}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Сигнал, который будет отправлен при нажатии кнопки \char`\"{}Применить\char`\"{} в окне редактировании данных водителя \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDriversList_aec15e22d402240cdbf25f7d31c8dd228}{Drivers\+List}} (QWidget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classDriversList}{Drivers\+List}} Конструктор по умолчанию \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDriversList_ac7b0e75e89eaad7098f40859ef7dc22c}\label{classDriversList_ac7b0e75e89eaad7098f40859ef7dc22c}} 
+{\bfseries $\sim$\+Drivers\+List} ()
+\begin{DoxyCompactList}\small\item\em Деструктор класса \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDriversList_af9db4b672c4d3104f5541893e08e1809}\label{classDriversList_af9db4b672c4d3104f5541893e08e1809}} 
+class {\bfseries Main\+Window}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс, представляющий окно вывода информации о водителях 
+
+Содержит описание окна отображения списка водителей склада. Этот класс наследует QDialog и представляет диалоговое окно 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDriversList_aec15e22d402240cdbf25f7d31c8dd228}\label{classDriversList_aec15e22d402240cdbf25f7d31c8dd228}} 
+\index{DriversList@{DriversList}!DriversList@{DriversList}}
+\index{DriversList@{DriversList}!DriversList@{DriversList}}
+\doxysubsubsection{\texorpdfstring{DriversList()}{DriversList()}}
+{\footnotesize\ttfamily Drivers\+List\+::\+Drivers\+List (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\mbox{\hyperlink{classDriversList}{Drivers\+List}} Конструктор по умолчанию 
+
+Создаёт новое диалоговое окно QDialog
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Родительский объект \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDriversList_af8e819378dc26b40139f1c5a8c51c5aa}\label{classDriversList_af8e819378dc26b40139f1c5a8c51c5aa}} 
+\index{DriversList@{DriversList}!sendDrivers@{sendDrivers}}
+\index{sendDrivers@{sendDrivers}!DriversList@{DriversList}}
+\doxysubsubsection{\texorpdfstring{sendDrivers}{sendDrivers}}
+{\footnotesize\ttfamily void Drivers\+List\+::send\+Drivers (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDriverModel}{Driver\+Model}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Сигнал, который будет отправлен при нажатии кнопки \char`\"{}Добавить\char`\"{} в окне добавления водителя 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Модель} & данных водителей \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDriversList_a5ed518116e1da2b1f7a5551b99747252}\label{classDriversList_a5ed518116e1da2b1f7a5551b99747252}} 
+\index{DriversList@{DriversList}!sendDriversE@{sendDriversE}}
+\index{sendDriversE@{sendDriversE}!DriversList@{DriversList}}
+\doxysubsubsection{\texorpdfstring{sendDriversE}{sendDriversE}}
+{\footnotesize\ttfamily void Drivers\+List\+::send\+DriversE (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDriverModel}{Driver\+Model}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Сигнал, который будет отправлен при нажатии кнопки \char`\"{}Применить\char`\"{} в окне редактировании данных водителя 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Модель} & данных водителей \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+driverslist.\+h\item 
+driverslist.\+cpp\end{DoxyCompactItemize}

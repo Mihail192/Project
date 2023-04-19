@@ -1,0 +1,45 @@
+\hypertarget{openfile_8h_source}{}\doxysection{openfile.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef OPENFILE\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define OPENFILE\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QDialog>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QDir>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <QListWidget>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <QMenu>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <QMessageBox>}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{keyword}{namespace }Ui \{}
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{classopenfile}{openfile}};}
+\DoxyCodeLine{15 \}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{22 \textcolor{keyword}{class }\mbox{\hyperlink{classopenfile}{openfile}} : \textcolor{keyword}{public} QDialog}
+\DoxyCodeLine{23 \{}
+\DoxyCodeLine{24     Q\_OBJECT}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 \textcolor{keyword}{public}:}
+\DoxyCodeLine{34     \textcolor{keyword}{explicit} \mbox{\hyperlink{classopenfile_a62fc1d61599bb853669449179180f199}{openfile}}(QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{39     \mbox{\hyperlink{classopenfile_a6433ffceb918ae3991117530ba0c4471}{\string~openfile}}();}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{44     \textcolor{keywordtype}{void} \mbox{\hyperlink{classopenfile_aff1e5a0bba3f103b5ed25d05f6927542}{updatelistfiles}}();}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 signals:}
+\DoxyCodeLine{52     \textcolor{keywordtype}{void} \mbox{\hyperlink{classopenfile_ad893fb9ff459278ccc629b2a781ec891}{openfilesignal}}(\textcolor{keywordtype}{string});}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{62     \textcolor{keywordtype}{void} on\_listWidget\_itemClicked(QListWidgetItem *item);}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{69     \textcolor{keywordtype}{void} ProvideContextMenu(\textcolor{keyword}{const} QPoint \&);}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71 \textcolor{keyword}{private}:}
+\DoxyCodeLine{72     Ui::openfile *ui; }
+\DoxyCodeLine{73 \};}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// OPENFILE\_H}}
+
+\end{DoxyCode}

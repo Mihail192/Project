@@ -1,0 +1,130 @@
+\hypertarget{classMainWindow}{}\doxysection{Main\+Window Class Reference}
+\label{classMainWindow}\index{MainWindow@{MainWindow}}
+
+
+Главное окно приложения.  
+
+
+
+
+{\ttfamily \#include $<$mainwindow.\+h$>$}
+
+
+
+Inheritance diagram for Main\+Window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{classMainWindow__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Main\+Window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{classMainWindow__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classMainWindow_a5d13e13efd14cc312585ec9cd1bf1554}{send\+Data}} (\mbox{\hyperlink{classStorageModel}{Storage\+Model}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Сигнал, который будет отправлен при нажатии кнопки \char`\"{}Добавить\char`\"{} в окне добаление товара \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMainWindow_a4be81f4ecb5c751cf5a22b55d49c9567}\label{classMainWindow_a4be81f4ecb5c751cf5a22b55d49c9567}} 
+void {\bfseries emptystoragesignal} ()
+\begin{DoxyCompactList}\small\item\em Сигнал, который будет отправлен при удалении товара \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMainWindow_a893e50dc2890c0bd5b76e60ac125837b}{send\+DataE}} (\mbox{\hyperlink{classStorageModel}{Storage\+Model}} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Сигнал, который будет отправлен при нажатии кнопки \char`\"{}Применить\char`\"{} в окне редактирования товара \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMainWindow_aa89200a95d37f686b845ed2d4459cf3f}{send\+Drivers}} (vector$<$ \mbox{\hyperlink{classdriver}{driver}} $>$)
+\begin{DoxyCompactList}\small\item\em Сигнал, который будет отправлен при нажатии кнопки \char`\"{}Добавить\char`\"{} в главном окне \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMainWindow_a996c5a2b6f77944776856f08ec30858d}{Main\+Window}} (QWidget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Конструктор класса. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMainWindow_ae98d00a93bc118200eeef9f9bba1dba7}\label{classMainWindow_ae98d00a93bc118200eeef9f9bba1dba7}} 
+{\bfseries $\sim$\+Main\+Window} ()
+\begin{DoxyCompactList}\small\item\em Деструктор класса \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Главное окно приложения. 
+
+Этот класс представляет главное окно приложения. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMainWindow_a996c5a2b6f77944776856f08ec30858d}\label{classMainWindow_a996c5a2b6f77944776856f08ec30858d}} 
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{MainWindow()}{MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::\+Main\+Window (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса. 
+
+Создает новый экземпляр класса \mbox{\hyperlink{classMainWindow}{Main\+Window}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Родительский объект. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMainWindow_a5d13e13efd14cc312585ec9cd1bf1554}\label{classMainWindow_a5d13e13efd14cc312585ec9cd1bf1554}} 
+\index{MainWindow@{MainWindow}!sendData@{sendData}}
+\index{sendData@{sendData}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{sendData}{sendData}}
+{\footnotesize\ttfamily void Main\+Window\+::send\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStorageModel}{Storage\+Model}} $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Сигнал, который будет отправлен при нажатии кнопки \char`\"{}Добавить\char`\"{} в окне добаление товара 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & объкет модели данных склада \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMainWindow_a893e50dc2890c0bd5b76e60ac125837b}\label{classMainWindow_a893e50dc2890c0bd5b76e60ac125837b}} 
+\index{MainWindow@{MainWindow}!sendDataE@{sendDataE}}
+\index{sendDataE@{sendDataE}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{sendDataE}{sendDataE}}
+{\footnotesize\ttfamily void Main\+Window\+::send\+DataE (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStorageModel}{Storage\+Model}} $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Сигнал, который будет отправлен при нажатии кнопки \char`\"{}Применить\char`\"{} в окне редактирования товара 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & объкет модели данных склада \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMainWindow_aa89200a95d37f686b845ed2d4459cf3f}\label{classMainWindow_aa89200a95d37f686b845ed2d4459cf3f}} 
+\index{MainWindow@{MainWindow}!sendDrivers@{sendDrivers}}
+\index{sendDrivers@{sendDrivers}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{sendDrivers}{sendDrivers}}
+{\footnotesize\ttfamily void Main\+Window\+::send\+Drivers (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classdriver}{driver}} $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Сигнал, который будет отправлен при нажатии кнопки \char`\"{}Добавить\char`\"{} в главном окне 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Вектор} & данных водителей \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+mainwindow.\+h\item 
+mainwindow.\+cpp\end{DoxyCompactItemize}
