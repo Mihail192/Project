@@ -1,0 +1,11 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" title=" " alt="" coords="5,183,80,209"/>
+<area shape="rect" id="node2" href="$classAdd.html" title="Класс, представляющий окно добавления товара" alt="" coords="151,5,197,32"/>
+<area shape="rect" id="node3" href="$classAdddriver.html" title="Класс, представляющий окно добавления водителя" alt="" coords="131,56,217,83"/>
+<area shape="rect" id="node4" href="$classDriverInfo.html" title="Класс, представляющий окно отображения информации о водителях склада" alt="" coords="131,107,217,133"/>
+<area shape="rect" id="node5" href="$classDriversList.html" title="Класс, представляющий окно вывода информации о водителях" alt="" coords="128,157,220,184"/>
+<area shape="rect" id="node6" href="$classeditdriver.html" title="Класс, представляющий окно редактирования данных о водителе" alt="" coords="131,208,217,235"/>
+<area shape="rect" id="node7" href="$classeditelem.html" title="Класс, представляющий окно редактирования данных о товаре." alt="" coords="134,259,214,285"/>
+<area shape="rect" id="node8" href="$classopenfile.html" title="Класс, представляющий окно отображения файлов" alt="" coords="137,309,211,336"/>
+<area shape="rect" id="node9" href="$classsavefile.html" title="Класс, представляющий окно ввода названия срхраняющего файла" alt="" coords="137,360,211,387"/>
+</map>

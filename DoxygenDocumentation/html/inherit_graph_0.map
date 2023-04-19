@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classdatauser.html" title="Класс, представляющий информацию о человеке." alt="" coords="5,31,84,57"/>
+<area shape="rect" id="node2" href="$classdriver.html" title="Класс, представляющий водителя." alt="" coords="134,5,194,32"/>
+<area shape="rect" id="node3" href="$classtenant.html" title="Класс, представляющий поставщика товара." alt="" coords="132,56,196,83"/>
+</map>
